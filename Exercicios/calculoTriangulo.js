@@ -17,3 +17,9 @@
 //saida de dados
 // = informar se o triangulo é equilátero, escaleno ou isócele
 // = motrar a saída do programa na console
+
+
+
+
+
+
