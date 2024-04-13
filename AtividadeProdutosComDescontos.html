@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Carpes">
+    <title>produtim</title>
+</head>
+
+<body>
+    
+    <script>
+
+let nomeProduto = prompt("Digite o nome do produto:");
+let quantidade = parseInt(prompt("Digite a quantidade adiquirida:")); 
+let precoU = parseFloat(prompt("Digite o preço unitário do produto:"));
+
+
+// lembra que \n quebra a linha prabaixo
+
+
+let total = quantidade * precoU;                
+
+if (quantidade <= 5) {
+    desconto = total * 0.02;
+} else if (quantidade > 5 && quantidade <= 10) {
+    desconto = total * 0.03;
+} else if (quantidade >= 10) {
+    desconto = total * 0.05;
+}
+
+let totalAPagar = total
+
+let mensagem =  "Produto:" + nomeProduto + "\n" +
+                "Quantidade:" + quantidade + "\n" +
+                "Preço unitário: R$" + precoU.toFixed(2) + "\n" +
+                "Total: R$" + total.toFixed(2) + "\n" +
+                "Desconto: R$" + desconto.toFixed(2) + "\n" +
+                "Total a pagar: R$" + totalAPagar.toFixed(2);
+
+alert(mensagem);
+
+    </script>
+    
+</body>
+
+</html>
+
